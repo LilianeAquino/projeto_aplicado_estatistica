@@ -1,10 +1,10 @@
-sexo = {
+sexo_biologico = {
     0: 'Masculino', 
     1: 'Feminino'
 }
 
 
-cor = {
+raca = {
     0: 'Indígena', 
     2: 'Branca', 
     4: 'Preta', 
@@ -33,7 +33,7 @@ anos_de_estudo = {
     17: 'Não determinados'
 }
 
-uf = {
+estado = {
     11: 'Rondônia', 
     12: 'Acre', 
     13: 'Amazonas', 
