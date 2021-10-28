@@ -15188,14 +15188,12 @@ memory usage: 3.5 MB
 </aside></section></section><section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Comportamento-vari%C3%A1vel-Renda">Comportamento vari&#225;vel Renda<a class="anchor-link" href="#Comportamento-vari%C3%A1vel-Renda">&#182;</a></h2><p>Para avaliar o comportamento da variável RENDA, foi construida uma tabela de frequências considerando as seguintes classes em salários mínimos:</p>
-<p><b>A</b> ► Acima de 25 SM</p>
-<p><b>B</b> ► De 15 a 25 SM</p>
-<p><b>C</b> ► De 5 a 15 SM</p>
-<p><b>D</b> ► De 2 a 5 SM</p>
-<p><b>E</b> ► Até 2 SM</p>
-<p><strong>Obs.</strong>: O salário mínimo na época da pesquisa era de <b>R$ 788,00</b>.</p>
-
+<h2 id="Comportamento-vari%C3%A1vel-Renda">Comportamento vari&#225;vel Renda<a class="anchor-link" href="#Comportamento-vari%C3%A1vel-Renda">&#182;</a></h2><p style='text-align: justify;'><font size=2.85>Para avaliar o comportamento da variável RENDA, foi construida uma tabela de frequências considerando as seguintes classes em salários mínimos:</font></p><p><b>A</b> ► <font size=2.85>Acima de 25 SM</font></p>
+<p><b>B</b> ► <font size=2.85>De 15 a 25 SM</font></p>
+<p><b>C</b> ► <font size=2.85>De 5 a 15 SM</font></p>
+<p><b>D</b> ► <font size=2.85>De 2 a 5 SM</font></p>
+<p><b>E</b> ► <font size=2.85>Até 2 SM</font></p>
+<p style='text-align: justify;'><font size=2.85>O salário mínimo na época da pesquisa era de <b>R$ 788,00</b>.</font></p>
 </div>
 </div><aside class="notes">
 
@@ -15418,7 +15416,7 @@ Name: Renda, dtype: int64</pre>
 </div><div class="fragment">
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p style='text-align: justify;'><font size=2.85>Boa parte da população que compõe essa base pertencem a classe E, ou seja, possuem uma renda de até 2 salários mínimos.</font></p>
+<p style='text-align: justify;'><font size=2.85>Cerca de 65% dos entrevistados pertenciam a classe E, ou seja, possuiam uma renda de até 2 salários mínimos (1576 reais).</font></p>
 </div>
 </div></div></section></section><section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
@@ -15472,12 +15470,12 @@ Name: Renda, dtype: int64</pre>
 </div><div class="fragment">
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p style='text-align: justify;'><font size=2.85>A variável idade possui muitos picos e vales e uma curva parecida com a normal. Existe uma grande variação.</font></p>
+<p style='text-align: justify;'><font size=2.85>A variável idade possui muitos picos e vales e uma curva parecida com a normal. Existe uma grande variação, temos de pessoas de 13 a 99 anos. È uma distribuição assimétrica à direita.</font></p>
 </div>
 </div></div></section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[10]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">ax</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">distplot</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Renda&#39;</span><span class="p">],</span> <span class="n">kde</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
@@ -15531,7 +15529,7 @@ Name: Renda, dtype: int64</pre>
 </div></section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[23]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[10]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">sample</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="s1">&#39;UF&#39;</span><span class="p">,</span> <span class="s1">&#39;Sexo&#39;</span><span class="p">,</span> <span class="s1">&#39;Cor&#39;</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
@@ -15552,7 +15550,7 @@ Name: Renda, dtype: int64</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[23]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[10]:</div>
 
 
 
@@ -15584,25 +15582,25 @@ Name: Renda, dtype: int64</pre>
     <tr>
       <th>count</th>
       <td>76840.000000</td>
-      <td>70800.000000</td>
+      <td>76840.000000</td>
       <td>76840.000000</td>
     </tr>
     <tr>
       <th>mean</th>
       <td>44.071421</td>
-      <td>8.149054</td>
+      <td>8.427408</td>
       <td>2000.383199</td>
     </tr>
     <tr>
       <th>std</th>
       <td>12.480583</td>
-      <td>3.978494</td>
+      <td>4.548749</td>
       <td>3323.387730</td>
     </tr>
     <tr>
       <th>min</th>
       <td>13.000000</td>
-      <td>0.000000</td>
+      <td>-1.000000</td>
       <td>0.000000</td>
     </tr>
     <tr>
@@ -15614,19 +15612,19 @@ Name: Renda, dtype: int64</pre>
     <tr>
       <th>50%</th>
       <td>43.000000</td>
-      <td>10.000000</td>
+      <td>9.000000</td>
       <td>1200.000000</td>
     </tr>
     <tr>
       <th>75%</th>
       <td>53.000000</td>
-      <td>10.000000</td>
+      <td>11.000000</td>
       <td>2000.000000</td>
     </tr>
     <tr>
       <th>max</th>
       <td>99.000000</td>
-      <td>14.000000</td>
+      <td>15.000000</td>
       <td>200000.000000</td>
     </tr>
   </tbody>
@@ -15649,14 +15647,13 @@ Name: Renda, dtype: int64</pre>
 </div></div></section></section><section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Renda-por-ra%C3%A7a-e-sexo">Renda por ra&#231;a e sexo<a class="anchor-link" href="#Renda-por-ra%C3%A7a-e-sexo">&#182;</a></h2><p>Na nossa amostra, para cada 2.257 homens chefes de família, há 1 mulher. Por isso, para mantermos uma comparação justa, usaremos uma amostra aleatória equilibrada de 10000 instâncias.</p>
-
+<h2 id="Renda-por-ra%C3%A7a-e-sexo-biol%C3%B3gico">Renda por ra&#231;a e sexo biol&#243;gico<a class="anchor-link" href="#Renda-por-ra%C3%A7a-e-sexo-biol%C3%B3gico">&#182;</a></h2><p style='text-align: justify;'><font size=2.85>Na nossa amostra, para cada 2.257 homens chefes de família, há 1 mulher. Por isso, para mantermos uma comparação justa, usaremos uma amostra aleatória equilibrada de 10000 instâncias.</font></p>
 </div>
 </div><aside class="notes">
 <div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[12]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">sample</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;Sexo&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span> <span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="n">n</span><span class="o">=</span><span class="mi">10000</span><span class="p">,</span> <span class="n">replace</span><span class="o">=</span><span class="kc">False</span><span class="p">))</span>
@@ -15695,13 +15692,170 @@ Name: Sexo, dtype: float64
 </aside></section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[13]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[12]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">analise_renda</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">crosstab</span><span class="p">(</span><span class="n">sample</span><span class="p">[</span><span class="s1">&#39;Cor&#39;</span><span class="p">],</span> <span class="n">sample</span><span class="p">[</span><span class="s1">&#39;Sexo&#39;</span><span class="p">],</span> <span class="n">values</span><span class="o">=</span><span class="n">sample</span><span class="p">[</span><span class="s1">&#39;Renda&#39;</span><span class="p">],</span> <span class="n">aggfunc</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;mean&#39;</span><span class="p">,</span> <span class="s1">&#39;median&#39;</span><span class="p">,</span> <span class="s1">&#39;max&#39;</span><span class="p">,</span> <span class="s1">&#39;std&#39;</span><span class="p">})</span>
 <span class="n">analise_renda</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="n">cor</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <span class="n">analise_renda</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="n">sexo</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <span class="n">analise_renda</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[12]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead tr th {
+        text-align: left;
+    }
+
+    .dataframe thead tr:last-of-type th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="2" halign="left">max</th>
+      <th colspan="2" halign="left">mean</th>
+      <th colspan="2" halign="left">median</th>
+      <th colspan="2" halign="left">std</th>
+    </tr>
+    <tr>
+      <th>Sexo</th>
+      <th>Masculino</th>
+      <th>Feminino</th>
+      <th>Masculino</th>
+      <th>Feminino</th>
+      <th>Masculino</th>
+      <th>Feminino</th>
+      <th>Masculino</th>
+      <th>Feminino</th>
+    </tr>
+    <tr>
+      <th>Cor</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Indígena</th>
+      <td>7000.0</td>
+      <td>9500.0</td>
+      <td>1425.041667</td>
+      <td>1209.853659</td>
+      <td>950.0</td>
+      <td>788.0</td>
+      <td>1491.832558</td>
+      <td>1655.776292</td>
+    </tr>
+    <tr>
+      <th>Branca</th>
+      <td>80000.0</td>
+      <td>60000.0</td>
+      <td>2899.262533</td>
+      <td>2039.940412</td>
+      <td>1600.0</td>
+      <td>1200.0</td>
+      <td>4119.747319</td>
+      <td>2885.584437</td>
+    </tr>
+    <tr>
+      <th>Preta</th>
+      <td>15000.0</td>
+      <td>23000.0</td>
+      <td>1505.086042</td>
+      <td>1110.539795</td>
+      <td>1200.0</td>
+      <td>800.0</td>
+      <td>1381.984238</td>
+      <td>1320.142382</td>
+    </tr>
+    <tr>
+      <th>Amarela</th>
+      <td>50000.0</td>
+      <td>19000.0</td>
+      <td>5585.950000</td>
+      <td>3289.186441</td>
+      <td>2500.0</td>
+      <td>1900.0</td>
+      <td>8284.446267</td>
+      <td>3781.746944</td>
+    </tr>
+    <tr>
+      <th>Parda</th>
+      <td>90000.0</td>
+      <td>30000.0</td>
+      <td>1647.191325</td>
+      <td>1153.459258</td>
+      <td>1200.0</td>
+      <td>800.0</td>
+      <td>2312.379680</td>
+      <td>1499.098433</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="fragment">
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p style='text-align: justify;'><font size=2.85>Homens indígenas e mulheres negras eram o grupo que possuem a renda média mais baixa. Analisado a mediana, percebemos que, em geral, os homens possuiam renda superior a das mulheres.</font></p>
+</div>
+</div></div></section></section><section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="Renda-por-anos-de-estudo-e-sexo-biol%C3%B3gico">Renda por anos de estudo e sexo biol&#243;gico<a class="anchor-link" href="#Renda-por-anos-de-estudo-e-sexo-biol%C3%B3gico">&#182;</a></h2>
+</div>
+</div></section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[13]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">analise_renda_2</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">crosstab</span><span class="p">(</span><span class="n">sample</span><span class="p">[</span><span class="s1">&#39;Anos de Estudo&#39;</span><span class="p">],</span> <span class="n">sample</span><span class="p">[</span><span class="s1">&#39;Sexo&#39;</span><span class="p">],</span> <span class="n">values</span><span class="o">=</span><span class="n">sample</span><span class="p">[</span><span class="s1">&#39;Renda&#39;</span><span class="p">],</span> <span class="n">aggfunc</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;mean&#39;</span><span class="p">,</span> <span class="s1">&#39;median&#39;</span><span class="p">,</span> <span class="s1">&#39;max&#39;</span><span class="p">,</span> <span class="s1">&#39;std&#39;</span><span class="p">})</span>
+<span class="n">analise_renda_2</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="n">anos_de_estudo</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">analise_renda_2</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="n">sexo</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">analise_renda_2</span>
 </pre></div>
 
      </div>
@@ -15761,163 +15915,6 @@ Name: Sexo, dtype: float64
       <th>Feminino</th>
     </tr>
     <tr>
-      <th>Cor</th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>Indígena</th>
-      <td>4000.0</td>
-      <td>120000.0</td>
-      <td>974.673913</td>
-      <td>3750.673913</td>
-      <td>788.0</td>
-      <td>788.0</td>
-      <td>995.110805</td>
-      <td>17600.434863</td>
-    </tr>
-    <tr>
-      <th>Branca</th>
-      <td>80000.0</td>
-      <td>60000.0</td>
-      <td>2932.286058</td>
-      <td>2074.693548</td>
-      <td>1800.0</td>
-      <td>1200.0</td>
-      <td>4016.997578</td>
-      <td>2976.205161</td>
-    </tr>
-    <tr>
-      <th>Preta</th>
-      <td>15000.0</td>
-      <td>15648.0</td>
-      <td>1547.855502</td>
-      <td>1135.714636</td>
-      <td>1200.0</td>
-      <td>800.0</td>
-      <td>1367.395741</td>
-      <td>1300.997893</td>
-    </tr>
-    <tr>
-      <th>Amarela</th>
-      <td>28000.0</td>
-      <td>20000.0</td>
-      <td>4711.655172</td>
-      <td>3237.744681</td>
-      <td>2500.0</td>
-      <td>1500.0</td>
-      <td>5648.675686</td>
-      <td>4438.347374</td>
-    </tr>
-    <tr>
-      <th>Parda</th>
-      <td>100000.0</td>
-      <td>24500.0</td>
-      <td>1710.502878</td>
-      <td>1182.091246</td>
-      <td>1200.0</td>
-      <td>800.0</td>
-      <td>2872.466638</td>
-      <td>1535.738995</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div><div class="fragment">
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p style='text-align: justify;'><font size=2.85>Homens indígenas e mulheres negras eram o grupo que possuem a renda média mais baixa. Analisado a mediana, percebemos que, em geral, os homens possuiam renda superior a das mulheres.</font></p>
-</div>
-</div></div></section></section><section><section>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Renda-por-anos-de-estudo-separado-por-sexo">Renda por anos de estudo separado por sexo<a class="anchor-link" href="#Renda-por-anos-de-estudo-separado-por-sexo">&#182;</a></h2>
-</div>
-</div></section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[14]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">analise_renda_2</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">crosstab</span><span class="p">(</span><span class="n">sample</span><span class="p">[</span><span class="s1">&#39;Anos de Estudo&#39;</span><span class="p">],</span> <span class="n">sample</span><span class="p">[</span><span class="s1">&#39;Sexo&#39;</span><span class="p">],</span> <span class="n">values</span><span class="o">=</span><span class="n">sample</span><span class="p">[</span><span class="s1">&#39;Renda&#39;</span><span class="p">],</span> <span class="n">aggfunc</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;mean&#39;</span><span class="p">,</span> <span class="s1">&#39;median&#39;</span><span class="p">,</span> <span class="s1">&#39;max&#39;</span><span class="p">,</span> <span class="s1">&#39;std&#39;</span><span class="p">})</span>
-<span class="n">analise_renda_2</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="n">anos_de_estudo</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="n">analise_renda_2</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="n">sexo</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="n">analise_renda_2</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[14]:</div>
-
-
-
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead tr th {
-        text-align: left;
-    }
-
-    .dataframe thead tr:last-of-type th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr>
-      <th></th>
-      <th colspan="2" halign="left">max</th>
-      <th colspan="2" halign="left">mean</th>
-      <th colspan="2" halign="left">median</th>
-      <th colspan="2" halign="left">std</th>
-    </tr>
-    <tr>
-      <th>Sexo</th>
-      <th>Masculino</th>
-      <th>Feminino</th>
-      <th>Masculino</th>
-      <th>Feminino</th>
-      <th>Masculino</th>
-      <th>Feminino</th>
-      <th>Masculino</th>
-      <th>Feminino</th>
-    </tr>
-    <tr>
       <th>Anos de Estudo</th>
       <th></th>
       <th></th>
@@ -15932,190 +15929,190 @@ Name: Sexo, dtype: float64
   <tbody>
     <tr>
       <th>Sem instrução e menos de 1 ano</th>
-      <td>15000.0</td>
       <td>10000.0</td>
-      <td>837.170670</td>
-      <td>523.784588</td>
-      <td>778.0</td>
-      <td>350.0</td>
-      <td>1101.924749</td>
-      <td>712.931286</td>
+      <td>3000.0</td>
+      <td>772.045679</td>
+      <td>502.875214</td>
+      <td>700.0</td>
+      <td>400.0</td>
+      <td>841.775342</td>
+      <td>483.538378</td>
     </tr>
     <tr>
       <th>1 ano</th>
-      <td>10000.0</td>
+      <td>7000.0</td>
       <td>2000.0</td>
-      <td>915.156566</td>
-      <td>493.736000</td>
+      <td>856.245192</td>
+      <td>514.693431</td>
       <td>788.0</td>
       <td>400.0</td>
-      <td>1019.819508</td>
-      <td>436.806153</td>
+      <td>765.027076</td>
+      <td>460.050118</td>
     </tr>
     <tr>
       <th>2 anos</th>
-      <td>10000.0</td>
-      <td>1500.0</td>
-      <td>917.598684</td>
-      <td>495.642857</td>
+      <td>15000.0</td>
+      <td>2000.0</td>
+      <td>911.077465</td>
+      <td>551.752577</td>
       <td>788.0</td>
-      <td>400.0</td>
-      <td>1016.912370</td>
-      <td>412.414771</td>
+      <td>500.0</td>
+      <td>1253.339201</td>
+      <td>444.738639</td>
     </tr>
     <tr>
       <th>3 anos</th>
-      <td>80000.0</td>
+      <td>5000.0</td>
       <td>2300.0</td>
-      <td>1326.764302</td>
-      <td>563.875000</td>
+      <td>998.846154</td>
+      <td>518.189831</td>
       <td>800.0</td>
-      <td>600.0</td>
-      <td>4132.925027</td>
-      <td>423.708967</td>
+      <td>470.0</td>
+      <td>783.426006</td>
+      <td>400.482980</td>
     </tr>
     <tr>
       <th>4 anos</th>
-      <td>15000.0</td>
-      <td>5000.0</td>
-      <td>1297.357985</td>
-      <td>706.634831</td>
-      <td>1000.0</td>
+      <td>50000.0</td>
+      <td>10000.0</td>
+      <td>1368.932275</td>
+      <td>717.307371</td>
+      <td>1050.0</td>
       <td>788.0</td>
-      <td>1098.925579</td>
-      <td>543.614821</td>
+      <td>1963.055824</td>
+      <td>663.856957</td>
     </tr>
     <tr>
       <th>5 anos</th>
-      <td>14000.0</td>
-      <td>5000.0</td>
-      <td>1298.481356</td>
-      <td>775.105751</td>
+      <td>35000.0</td>
+      <td>7880.0</td>
+      <td>1370.831104</td>
+      <td>763.287908</td>
       <td>1000.0</td>
       <td>788.0</td>
-      <td>1110.296306</td>
-      <td>564.304327</td>
+      <td>1892.471106</td>
+      <td>612.928213</td>
     </tr>
     <tr>
       <th>6 anos</th>
-      <td>15000.0</td>
-      <td>6000.0</td>
-      <td>1443.837500</td>
-      <td>862.398649</td>
+      <td>25000.0</td>
+      <td>4000.0</td>
+      <td>1448.086310</td>
+      <td>842.557491</td>
       <td>1200.0</td>
       <td>788.0</td>
-      <td>1245.677509</td>
-      <td>595.378105</td>
+      <td>1636.620758</td>
+      <td>535.534270</td>
     </tr>
     <tr>
       <th>7 anos</th>
-      <td>40000.0</td>
-      <td>9000.0</td>
-      <td>1467.116618</td>
-      <td>824.753894</td>
-      <td>1100.0</td>
+      <td>10000.0</td>
+      <td>4000.0</td>
+      <td>1373.036011</td>
+      <td>814.372240</td>
+      <td>1200.0</td>
       <td>788.0</td>
-      <td>2306.808329</td>
-      <td>682.163923</td>
+      <td>981.098617</td>
+      <td>547.016315</td>
     </tr>
     <tr>
       <th>8 anos</th>
       <td>20000.0</td>
-      <td>16000.0</td>
-      <td>1730.142329</td>
-      <td>945.687951</td>
-      <td>1400.0</td>
+      <td>18000.0</td>
+      <td>1658.567835</td>
+      <td>941.757202</td>
+      <td>1300.0</td>
       <td>800.0</td>
-      <td>1638.714293</td>
-      <td>939.795919</td>
+      <td>1463.157226</td>
+      <td>950.991100</td>
     </tr>
     <tr>
       <th>9 anos</th>
-      <td>30000.0</td>
-      <td>3500.0</td>
-      <td>1611.297872</td>
-      <td>894.008368</td>
-      <td>1300.0</td>
-      <td>791.0</td>
-      <td>2053.372210</td>
-      <td>585.667062</td>
+      <td>15000.0</td>
+      <td>20000.0</td>
+      <td>1460.530120</td>
+      <td>912.449799</td>
+      <td>1200.0</td>
+      <td>788.0</td>
+      <td>1231.558490</td>
+      <td>1334.181602</td>
     </tr>
     <tr>
       <th>10 anos</th>
-      <td>15000.0</td>
-      <td>5000.0</td>
-      <td>1564.655914</td>
-      <td>920.860215</td>
-      <td>1200.0</td>
-      <td>800.0</td>
-      <td>1434.388348</td>
-      <td>641.894144</td>
+      <td>18000.0</td>
+      <td>6000.0</td>
+      <td>1780.917857</td>
+      <td>914.698182</td>
+      <td>1260.0</td>
+      <td>808.0</td>
+      <td>1769.989528</td>
+      <td>590.921778</td>
     </tr>
     <tr>
       <th>11 anos</th>
-      <td>30000.0</td>
       <td>50000.0</td>
-      <td>2083.627765</td>
-      <td>1282.308529</td>
-      <td>1500.0</td>
-      <td>992.0</td>
-      <td>1978.352387</td>
-      <td>1497.503142</td>
+      <td>25000.0</td>
+      <td>2110.135197</td>
+      <td>1253.131524</td>
+      <td>1550.0</td>
+      <td>980.0</td>
+      <td>2124.286982</td>
+      <td>1188.752893</td>
     </tr>
     <tr>
       <th>12 anos</th>
       <td>15000.0</td>
-      <td>120000.0</td>
-      <td>2394.168831</td>
-      <td>1826.685121</td>
-      <td>1800.0</td>
+      <td>20000.0</td>
+      <td>2376.860987</td>
+      <td>1482.632653</td>
+      <td>2000.0</td>
       <td>1200.0</td>
-      <td>1852.765198</td>
-      <td>7048.143583</td>
+      <td>1834.537923</td>
+      <td>1476.576414</td>
     </tr>
     <tr>
       <th>13 anos</th>
-      <td>18000.0</td>
+      <td>14000.0</td>
       <td>20000.0</td>
-      <td>3186.045752</td>
-      <td>1913.857955</td>
-      <td>2300.0</td>
-      <td>1295.0</td>
-      <td>2735.317032</td>
-      <td>2116.077629</td>
+      <td>3012.876623</td>
+      <td>1842.312195</td>
+      <td>2000.0</td>
+      <td>1250.0</td>
+      <td>2464.061996</td>
+      <td>1990.434303</td>
     </tr>
     <tr>
       <th>14 anos</th>
-      <td>25000.0</td>
-      <td>15000.0</td>
-      <td>3678.500000</td>
-      <td>2238.472000</td>
+      <td>22000.0</td>
+      <td>16000.0</td>
+      <td>3498.575163</td>
+      <td>2362.662447</td>
       <td>2500.0</td>
-      <td>1549.0</td>
-      <td>3668.149076</td>
-      <td>2110.694378</td>
+      <td>1600.0</td>
+      <td>3483.587544</td>
+      <td>2251.739174</td>
     </tr>
     <tr>
       <th>15 anos ou mais</th>
-      <td>100000.0</td>
+      <td>90000.0</td>
       <td>60000.0</td>
-      <td>6101.060144</td>
-      <td>3865.050443</td>
-      <td>4061.0</td>
-      <td>2700.0</td>
-      <td>6790.018413</td>
-      <td>3971.206238</td>
+      <td>6085.968595</td>
+      <td>3768.607996</td>
+      <td>4000.0</td>
+      <td>2600.0</td>
+      <td>6706.073400</td>
+      <td>3948.565268</td>
     </tr>
     <tr>
       <th>Não determinados</th>
-      <td>3600.0</td>
       <td>3000.0</td>
-      <td>1299.090909</td>
-      <td>797.384615</td>
-      <td>1000.0</td>
+      <td>2000.0</td>
+      <td>1287.304348</td>
+      <td>766.263158</td>
+      <td>1270.0</td>
       <td>788.0</td>
-      <td>959.889424</td>
-      <td>553.859597</td>
+      <td>652.855158</td>
+      <td>428.681239</td>
     </tr>
   </tbody>
 </table>
@@ -16141,7 +16138,7 @@ Name: Sexo, dtype: float64
 </div></section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[15]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[14]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">boxplot</span><span class="p">([</span><span class="s1">&#39;Renda&#39;</span><span class="p">],</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
@@ -16182,7 +16179,7 @@ Name: Sexo, dtype: float64
 </div><div class="fragment">
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p style='text-align: justify;'><font size=2.85>Podemos ver que existem possíveis outliers na nossa amostra. Também temos uma cauda para a direita, o que indica uma grande concentração em salário mais baixos.</font></p>
+<p style='text-align: justify;'><font size=2.85>Podemos ver que existem possíveis outliers na nossa amostra, porém os valores de renda estão muitos disperos ficando difícil determinar o que de fato é outlier. Também temos uma cauda para a direita, o que indica uma grande concentração em salário mais baixos.</font></p>
 </div>
 </div></div></section></section><section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
@@ -16192,7 +16189,7 @@ Name: Sexo, dtype: float64
 </div></section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[16]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[15]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Anos de Estudo&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Anos de Estudo&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="n">map_anos_estudos</span><span class="p">)</span>
@@ -16238,7 +16235,7 @@ Name: Sexo, dtype: float64
 </div><div class="fragment">
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p style='text-align: justify;'><font size=2.85>Parece não existir correlação entre nossas varáveis, uma vez que todas possuem um grau de correlação bem fraco. O maior grau de correlação está associado a renda e aos anos de Estudo.</font></p>
+<p style='text-align: justify;'><font size=2.85>Parece não existir correlação entre nossas variáveis, uma vez que todas possuem um grau de correlação bem fraco. O maior grau de correlação está associado a renda e aos anos de Estudo.</font></p>
 </div>
 </div></div></section></section>
 </div>
