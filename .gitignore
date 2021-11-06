@@ -41,3 +41,5 @@ ipython_config.py
 */.npy/*
 
 __pycache__/*
+/img
+img/
