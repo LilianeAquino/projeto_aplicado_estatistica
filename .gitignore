@@ -43,3 +43,5 @@ ipython_config.py
 __pycache__/*
 /img
 img/
+/apresentação
+apresentação/
